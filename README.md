@@ -1,6 +1,6 @@
 # JS Todo App
 
-The goal of this assignment is to build a simple client-side JavaScript "todo" app. Users of your app should see a list of finished items, a list of unfinished items, and a form with a single text field and a "Create" button to add new items. It should not be possible to add blank items. New items are unfinished by default, and move to finished when the user clicks a "Complete" button. All items have a "Delete" button that removes them from the app.
+The goal of this assignment is to build a simple client-side JavaScript "todo" app. Users of your app should see a list of finished items, a list of unfinished items, and a form with a single text field and a "Create" button to add new items. It should not be possible to add blank items. New items are unfinished by default, and move to finished when the user clicks a "Complete" button attached to the item. All items also have a "Delete" button that removes them from the app.
 
 ## Application structure
 
