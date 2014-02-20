@@ -20,7 +20,7 @@ Each new function you write for these classes, including the constructor, should
 * Add a click handler to your "Create" button that calls a function on your `TodoApp` instance to create the item &ndash; you'll need to do this within an onload function, no `onclick` attributes in your HTML!
 * Create an appropriate constructor for `TodoItem` and implement a function that "renders" the item into a DOM node that `TodoApp` can insert
 * Add `TodoItem` functions to generate the Complete and Delete buttons with onclick functions that perform those actions, and incorporate the buttons into the "rendered" DOM node
-* Make `TodoItem` responsible for preventing blank items from being created (think like a validator in Rails)
+* Make `TodoItem` responsible for preventing blank items from being created (think validators in Rails)
 
 ## Bonus stage unlocked!
 
