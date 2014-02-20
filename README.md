@@ -2,7 +2,7 @@
 
 The goal of this assignment is to build a simple client-side JavaScript "todo" application that makes use of DOM manipulation, user interaction through events, and testing with Jasmine.
 
-Users of your app should be presented with a list of finished items, a list of unfinished items, and a form with a single text field and a "Create" button to add new items. New items are unfinished by default, and move to finished when the user clicks a "Complete" button. All items have a "Delete" button that removes them from the app.
+Users of your app should see a list of finished items, a list of unfinished items, and a form with a single text field and a "Create" button to add new items. New items are unfinished by default, and move to finished when the user clicks a "Complete" button. Items have a "Delete" button that removes them from the app.
 
 ## Application structure
 
