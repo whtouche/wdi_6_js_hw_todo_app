@@ -8,7 +8,7 @@ Users of your app should see a list of finished items, a list of unfinished item
 
 You should have two classes for this app: `TodoApp` and `TodoItem`.
 
-`TodoApp` holds the app functions not related to individual todo items. Since there is only one app, you should only create one instance of this class. It creates and appends new tasks to the DOM, and stores arrays of finished and unfinished items.
+`TodoApp` holds the app functions not related to individual todo items. Since there is only one app, there will be no *instances* of this class; data and functions will be stored and called directly on the class itself. It creates and appends new tasks to the DOM, and stores arrays of finished and unfinished items.
 
 `TodoItem` represents an individual todo item, and handles constructing the actual DOM elements for displaying itself. These elements will need to include "complete" and "delete" buttons, with appropriate functions bound to their click events.
 
@@ -24,4 +24,6 @@ Each new function you write for these classes, including the constructor, should
 
 ## Bonus stage unlocked!
 
-Add "created at" and "completed at" properties to `TodoItem` to keep track of the date each item was created and completed. `style.css` has a class that would be appropriate for displaying this info.
+**Bonus 1:** Add "created at" and "completed at" properties to `TodoItem` to keep track of the date each item was created and completed. `style.css` has a class that would be appropriate for displaying this info.
+
+**Bonus 2:** Keep unfinished items sorted by creation date, and finished items sorted by completion date. This is where storing those item arrays on the `TodoApp` class will definitely come in handy!
