@@ -17,7 +17,7 @@ Each new function you write for these classes, including the constructor, should
 ## Things you'll need to do
 
 * Build a DOM structure for the app with useful IDs and classes that will allow easy manipulation from JavaScript &ndash; there are some defined in `style.css` already
-* Add a click handler to your "Create" button that calls a function on your `TodoApp` instance to create the item &ndash; you'll need to do this within an onload function, no `onclick` attributes in your HTML!
+* In an onload handler, add an onclick handler to your "Create" button that calls a function on `TodoApp`, which will create the item from the text in the form field
 * Create an appropriate constructor for `TodoItem` and implement a function that "renders" the item into a DOM node that `TodoApp` can insert
 * Add `TodoItem` functions to generate the Complete and Delete buttons with onclick functions that perform those actions, and incorporate the buttons into the "rendered" DOM node
 * Make `TodoItem` responsible for preventing blank items from being created (think validators in Rails)
@@ -26,4 +26,4 @@ Each new function you write for these classes, including the constructor, should
 
 **Bonus 1:** Add "created at" and "completed at" properties to `TodoItem` to keep track of the date each item was created and completed. `style.css` has a class that would be appropriate for displaying this info.
 
-**Bonus 2:** Keep unfinished items sorted by creation date, and finished items sorted by completion date. This is where storing those item arrays on the `TodoApp` class will definitely come in handy!
+**Bonus 2:** Keep the todo items in both lists sorted alphabetically at all times. This is where storing those item arrays on the `TodoApp` class will definitely come in handy!
