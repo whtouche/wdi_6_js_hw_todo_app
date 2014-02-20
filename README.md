@@ -16,7 +16,7 @@ You should have two classes for this app: `TodoApp` and `TodoItem`.
 
 * Build a DOM structure for the app with useful IDs and classes that will allow easy manipulation from JavaScript &ndash; there are some defined in `style.css` already
 * In an onload handler, add an onclick handler to your "Create" button that calls a function on `TodoApp`, which will create the item from the text in the form field
-* Create an appropriate constructor for `TodoItem` and implement a function that "renders" the item into a DOM node that `TodoApp` can insert
+* Create a constructor for `TodoItem`, and implement a function that creates and returns an HTML element with the appropriate properties that `TodoApp` can insert
 * Add `TodoItem` functions to generate the Complete and Delete buttons with onclick functions that perform those actions, and incorporate the buttons into the "rendered" DOM node
 * Make `TodoItem` responsible for preventing blank items from being created (think validators in Rails)
 
