@@ -6,7 +6,7 @@ The goal of this assignment is to build a simple client-side JavaScript "todo" a
 
 You should have two classes for this app: `TodoApp` and `TodoItem`.
 
-`TodoApp` holds the app functions not related to individual todo items. Since there is only one app, there will be no *instances* of this class; data and functions will be stored and called directly on the class itself. It creates and appends new tasks to the DOM, and stores arrays of finished and unfinished items.
+`TodoApp` holds the app functions not related to individual todo items. Since there is only one app, there will be no *instances* of this class; data and functions will be stored and called directly on the class itself. It handles inserting, relocating, and deleting elements from the DOM, and stores an array of all todo items.
 
 `TodoItem` represents an individual todo item, and handles constructing the actual DOM elements for displaying itself. These elements will need to include "complete" and "delete" buttons, with appropriate functions bound to their click events.
 
