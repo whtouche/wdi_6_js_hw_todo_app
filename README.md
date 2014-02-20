@@ -10,7 +10,7 @@ You should have two classes for this app: `TodoApp` and `TodoItem`.
 
 `TodoItem` represents an individual todo item, and handles constructing the actual DOM elements for displaying itself. These elements will need to include "complete" and "delete" buttons, with appropriate functions bound to their click events.
 
-**Note:** There is a Jasmine setup in this repository, but since we don't yet have the tools to test JavaScript that interacts with the DOM, testing is optional for this assignment. If you can make it work, great! If not, don't worry about it.
+**Note:** There is a Jasmine setup in this repository, but since we don't yet have the tools to test JavaScript that interacts with the DOM, testing is optional for this assignment. If you can make it work, great!
 
 ## Things you'll need to do
 
