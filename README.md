@@ -1,81 +1,26 @@
 # JS Todo App
 
-The goal of this lab is to build a simple client-side JavaScript "todo" application that makes use of DOM manipulation, user interaction through events, and testing with Jasmine.
+The goal of this assignment is to build a simple client-side JavaScript "todo" application that makes use of DOM manipulation, user interaction through events, and testing with Jasmine.
+
+Users of your app should be presented with a list of finished items, a list of unfinished items, and a form with a single text field to add new items. New items are unfinished by default, and move to finished when the user clicks a "Complete" button. All items have a "Delete" button that removes them from the app.
 
 ## Application structure
 
 You should have two classes for this app: `TodoApp` and `TodoItem`.
 
-`TodoApp` combines all the functions that are useful for working with the app. It creates and appends new tasks to the DOM and also retrieves an array of finished and unfinished tasks.
+`TodoApp` holds the app functions not related to individual todo items. Since there is only one app, you should only create one instance of this class. It creates and appends new tasks to the DOM, and stores arrays of finished and unfinished items.
 
-`TodoItem` constructs the actual DOM element to represent a task. The functions that return "complete" and "delete" buttons also bind a function that handles the click events for those buttons. The "render" function returns a DOM object containing the task and the two buttons.
+`TodoItem` represents an individual todo item, and handles constructing the actual DOM elements for displaying itself. These elements will need to include "complete" and "delete" buttons, with appropriate functions bound to their click events.
 
-## Step-by-step instructions
+Each new function you write for these classes (including the constructor) should be test-driven using Jasmine.
 
-Be sure to have a solid grasp on functions used as constructors for objects. [See this article](http://pivotallabs.com/javascript-constructors-prototypes-and-the-new-keyword/) for details on exactly how it all works.
+## Things you'll need to do
 
-### Step 1
+* Build a DOM structure for the app with useful IDs and classes that will allow easy manipulation from JavaScript (check `style.css`)
+* Add a click handler to your "Create Item" button that calls a function on your `TodoApp` instance to create the item (you'll need to do this within an onload function, no `onclick` attributes in your HTML!)
+* Create an appropriate constructor for `TodoItem` and implement a function that "renders" the item into a DOM node that `TodoApp` can insert
+* Add `TodoItem` functions to generate the Complete and Delete buttons with onclick functions that perform those actions, and incorporate the buttons into the "rendered" DOM node
 
-Build out the DOM structure in `index.html`:
+## Bonus stage unlocked!
 
-- A container div with id 'container' for the app, containing:
-  - A div with an 'unfinished' id for holding new tasks, containing:
-    - An input field with the 'new-task-field' id for getting user input
-    - A button with an 'add-item' id for submitting a new task
-    - An orderd list with a 'todo-items' id for holding new tasks
-  - A div with an 'unfinished' id for completed tasks, containing:
-    - An unordered list with a 'completed-items' id for holding completed tasks
-
-### Step 2
-
-Build out the structure of the JavaScript app in `src`:
-
-- An empty TodoApp object
-- An empty TodoItem object
-
-### Step 3
-
-Implement the basic item-adding functionality:
-
-- Use the `window.onload` event to pick out the 'add-item' button
-- Add an `onclick` event handler that will call a todoApp createTask method and input from the 'new-task-field' field as an argument
-- Implement the todoApp createTask method to:
-  - create a new instance of a todoItem object
-  - Use the new task objects setTaskText method to set the task text from the argument
-  - call the todoApp appendTask method passing the new task object as an argument
-- Implement the todoApp appendTask method to:
-  - check that the new task name isn't blank
-  - call the new task render method that returns a DOM object and append it to the 'todo-items'
-- Implement the necessary todoItem methods:
-  - setTaskText method to set the taskName attribute
-  - render method to return an 'li' element with a div for holding the task text
-
-### Step 4
-
-Implement the complete button:
-
-- (TDD) Write a test to make sure that the todoApp completedButton method returns a button
-- Make a todoItem completedButton method that will return a button DOM object:
-  - create the button
-  - set the onclick function to do some DOM manipulation:
-    - (remember to save a reference to the todoItem 'this' in the function's scope by storing it in a variable)
-    - remove the task from 'todo-items' and append it to 'completed-items'
-
-### Step 5
-
-Implement the delete button
-
-- (TDD) Write a test to make sure that the todoApp deleteButton method returns a button
-- Make a todoItem deleteButton method that will return a button DOM object:
-  - create the button
-  - set the onclick function to do some DOM manipulation:
-    - (remember to save a reference to the todoItem 'this' in the function's scope by storing it in a variable)
-    - remove the task from the DOM
-
-### Step 6 (Optional)
-
-You may want to refactor some code, add helper methods to clean up the repeated parts or abstract out some parts, and add styling by adding CSS classes.
-
-### Step 7 (Optional)
-
-Add a 'created on:' and 'completed on:' section to the tasks to keep track of the date when the tasks were created and completed.
+Add "created at" and "completed at" properties to `TodoItem` to keep track of the date each item was created and completed. `style.css` has a class that would be appropriate for displaying this info.

@@ -38,9 +38,11 @@ p{
 	background:#404040;
 	color:#eeeeee;
 }
+
 #finished li{
 	list-style-type: none;
 }
+
 #finished li .items{
 	color:#aaaaaa;
 }
@@ -66,6 +68,7 @@ button{
 	background:#6060ff;
 	padding:10px 20px 10px 20px;
 }
+
 .delete:hover{
 	background:#ff6060;
 }
@@ -81,6 +84,7 @@ button{
 li{
 	margin:5px;
 }
+
 h3{
 	color:#404040;
 }
