@@ -24,6 +24,6 @@ Each new function you write for these classes, including the constructor, should
 
 ## Bonus stage unlocked!
 
-**Bonus 1:** Add "created at" and "completed at" properties to `TodoItem` to keep track of the date each item was created and completed. `style.css` has a class that would be appropriate for displaying this info.
+**Bonus:** Add "created at" and "completed at" properties to `TodoItem` to keep track of the date each item was created and completed. `style.css` has a class that would be appropriate for displaying this info.
 
-**Bonus 2:** Keep the todo items in both lists sorted alphabetically at all times. This is where storing those item arrays on the `TodoApp` class will definitely come in handy!
+**Super Bonus:** Add two links that allow the user to sort items either by creation/completion date or alphabetically. This is where storing those item arrays on the `TodoApp` class will definitely come in handy!
