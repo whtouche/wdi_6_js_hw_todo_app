@@ -16,8 +16,8 @@ Each new function you write for these classes (including the constructor) should
 
 ## Things you'll need to do
 
-* Build a DOM structure for the app with useful IDs and classes that will allow easy manipulation from JavaScript (check `style.css`)
-* Add a click handler to your "Create Item" button that calls a function on your `TodoApp` instance to create the item (you'll need to do this within an onload function, no `onclick` attributes in your HTML!)
+* Build a DOM structure for the app with useful IDs and classes that will allow easy manipulation from JavaScript &ndash; there are some defined in `style.css` already
+* Add a click handler to your "Create Item" button that calls a function on your `TodoApp` instance to create the item &ndash; you'll need to do this within an onload function, no `onclick` attributes in your HTML!
 * Create an appropriate constructor for `TodoItem` and implement a function that "renders" the item into a DOM node that `TodoApp` can insert
 * Add `TodoItem` functions to generate the Complete and Delete buttons with onclick functions that perform those actions, and incorporate the buttons into the "rendered" DOM node
 
