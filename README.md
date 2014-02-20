@@ -1,8 +1,6 @@
 # JS Todo App
 
-The goal of this assignment is to build a simple client-side JavaScript "todo" application that makes use of DOM manipulation, user interaction through events, and testing with Jasmine.
-
-Users of your app should see a list of finished items, a list of unfinished items, and a form with a single text field and a "Create" button to add new items. It should not be possible to add blank items. New items are unfinished by default, and move to finished when the user clicks a "Complete" button. All items have a "Delete" button that removes them from the app.
+The goal of this assignment is to build a simple client-side JavaScript "todo" app. Users of your app should see a list of finished items, a list of unfinished items, and a form with a single text field and a "Create" button to add new items. It should not be possible to add blank items. New items are unfinished by default, and move to finished when the user clicks a "Complete" button. All items have a "Delete" button that removes them from the app.
 
 ## Application structure
 
@@ -12,7 +10,7 @@ You should have two classes for this app: `TodoApp` and `TodoItem`.
 
 `TodoItem` represents an individual todo item, and handles constructing the actual DOM elements for displaying itself. These elements will need to include "complete" and "delete" buttons, with appropriate functions bound to their click events.
 
-Each new function you write for these classes, including the constructor, should be test-driven using Jasmine.
+**Note:** There is a Jasmine setup in this repository, but since we don't yet have the tools to test JavaScript that interacts with the DOM, testing is optional for this assignment. If you can make it work, great! If not, don't worry about it.
 
 ## Things you'll need to do
 
