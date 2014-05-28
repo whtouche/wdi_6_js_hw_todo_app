@@ -15,13 +15,24 @@ You should have two classes for this app: `TodoApp` and `TodoItem`.
 ## Things you'll need to do
 
 * Build a DOM structure for the app with useful IDs and classes that will allow easy manipulation from JavaScript &ndash; Bootstrap has been included and there are some pre-built styles in `todo.css`
-* In an onload handler, add an onclick handler to your "Create" button that calls a function on `TodoApp`, which will create the item from the text in the form field
+* In a `$(document).ready()` handler, add a click event handler to your "Create" button that calls a function on `TodoApp`, which will create the item from the text in the form field
 * Create a constructor for `TodoItem`, and implement a function that creates and returns an HTML element with the appropriate properties that `TodoApp` can insert
 * Add `TodoItem` functions to generate the Complete and Delete buttons with onclick functions that perform those actions, and incorporate the buttons into the "rendered" DOM node
 * Make `TodoItem` responsible for preventing blank items from being created (think validators in Rails)
 
-## Bonus stage unlocked!
+## Grading Rubric (20 points)
 
-**Bonus:** Add "created at" and "completed at" properties to `TodoItem` to keep track of the date each item was created and completed. `todos.css` has a class that would be appropriate for displaying this info.
+- (1) Strong use of Git, making several commits along the way with clear messages
+- (1) Application is deployed to Heroku and visible online
+- (1) Leverage the given CSS (modifying if desired) to make this look great
+- (1) Consistent and clear JavaScript style following best practices and/or a style-guide
+- (1) HTML uses appropriate DOM structure with useful IDs and Classes, including a form for adding Todo items
+- (2) Create specified event handler on Create button
+- (2) Create specified constructor to TodoItem
+- (2) Create `TodoItem` functions (completed, delete buttons) and implement buttons/events as specified
+- (1) Prevent blank `TodoItem` from being created
+- (2) TodoApp is tested with Jasmine
+- (2) TodoItem is tested with Jasmine
+- (2) TodoItem has "created at" and "completed at" to keep track of the date each item was created and completed. Note that`todos.css` has a class that would be appropriate for displaying this info.
+- (2) Add links that allow the user to sort items either by creation/completion date or alphabetically. Storing item arrays on the `TodoApp` class will be useful for this.
 
-**Super Bonus:** Add links that allow the user to sort items either by creation/completion date or alphabetically. This is where storing those item arrays on the `TodoApp` class will definitely come in handy!
