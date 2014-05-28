@@ -14,7 +14,7 @@ You should have two classes for this app: `TodoApp` and `TodoItem`.
 
 ## Things you'll need to do
 
-* Build a DOM structure for the app with useful IDs and classes that will allow easy manipulation from JavaScript &ndash; there are some defined in `style.css` already
+* Build a DOM structure for the app with useful IDs and classes that will allow easy manipulation from JavaScript &ndash; Bootstrap has been included and there are some pre-built styles in `todo.css`
 * In an onload handler, add an onclick handler to your "Create" button that calls a function on `TodoApp`, which will create the item from the text in the form field
 * Create a constructor for `TodoItem`, and implement a function that creates and returns an HTML element with the appropriate properties that `TodoApp` can insert
 * Add `TodoItem` functions to generate the Complete and Delete buttons with onclick functions that perform those actions, and incorporate the buttons into the "rendered" DOM node
@@ -22,6 +22,6 @@ You should have two classes for this app: `TodoApp` and `TodoItem`.
 
 ## Bonus stage unlocked!
 
-**Bonus:** Add "created at" and "completed at" properties to `TodoItem` to keep track of the date each item was created and completed. `style.css` has a class that would be appropriate for displaying this info.
+**Bonus:** Add "created at" and "completed at" properties to `TodoItem` to keep track of the date each item was created and completed. `todos.css` has a class that would be appropriate for displaying this info.
 
 **Super Bonus:** Add links that allow the user to sort items either by creation/completion date or alphabetically. This is where storing those item arrays on the `TodoApp` class will definitely come in handy!
