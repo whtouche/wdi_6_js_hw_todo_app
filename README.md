@@ -25,9 +25,9 @@ There are two main components to this app: `TodoApp` and `TodoItem`.
 ## Grading
 
 - **(1)** HTML uses appropriate DOM structure with useful IDs and Classes
-- **(2)** Create specified event handler on Create button
+- **(2)** Create specified event handler on Create button and corresponding function
 - **(2)** Create specified constructor to TodoItem
-- **(2)** Create `TodoItem` functions (completed, delete buttons) and implement buttons/events as specified
+- **(2)** Create `TodoItem` "rendering" functions and implement buttons/events as specified
 - **(1)** Blank todo items cannot be created
 - **(2)** TodoItem has "created at" and "completed at" properties that are set at the appropriate times
 - **(2)** Todo items can be sorted either by creation/completion date or alphabetically
