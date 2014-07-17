@@ -21,18 +21,3 @@ There are two main components to this app: `TodoApp` and `TodoItem`.
 * Make `TodoItem` responsible for preventing blank items from being created (think validators in Rails)
 * Add properties on `TodoItem` for "created at" and "completed at", set them at the appropriate points in the code, and incorporate this info into the item's "rendered" DOM node
 * Add links to both lists for sorting items either by creation/completion date or alphabetically, with click handlers that call a function on `TodoApp` which does the sorting
-
-## Grading
-
-- **(1)** HTML uses appropriate DOM structure with useful IDs and Classes
-- **(2)** Create specified event handler on Create button and corresponding function
-- **(2)** Create specified constructor to TodoItem
-- **(2)** Create `TodoItem` "rendering" functions and implement buttons/events as specified
-- **(1)** Blank todo items cannot be created
-- **(2)** TodoItem has "created at" and "completed at" properties that are set at the appropriate times
-- **(2)** Todo items can be sorted either by creation/completion date or alphabetically
-- **(1)** Strong use of Git, making several commits along the way with clear messages
-- **(1)** Leverage Bootstrap or write your own CSS styles to make this look great
-- **(1)** Consistent and clear JavaScript style following best practices and/or a style guide
-
-Total points: **15**
