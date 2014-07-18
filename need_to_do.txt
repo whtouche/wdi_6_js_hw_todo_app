@@ -1,0 +1,7 @@
+Build a DOM structure for the app with useful IDs and classes that will allow easy manipulation from JavaScript
+In the $(document).ready() handler, add a click event handler to your "Create" button that calls a function on TodoApp, which will create the item from the text in the form field
+Create a constructor for TodoItem, and implement a function that creates and returns an HTML element with the appropriate properties that TodoApp can insert
+Add TodoItem functions to generate the Complete and Delete buttons, and incorporate them into the "rendered" DOM node
+Make TodoItem responsible for preventing blank items from being created (think validators in Rails)
+Add properties on TodoItem for "created at" and "completed at", set them at the appropriate points in the code, and incorporate this info into the item's "rendered" DOM node
+Add links to both lists for sorting items either by creation/completion date or alphabetically, with click handlers that call a function on TodoApp which does the sorting
