@@ -1,6 +1,12 @@
-var TodoItem = function(){
+var TodoItem = function(name, createdAt, completedAt){
 
+  this.name = name;
+  createdAt = date.now();
+  completedAt = null;
+  completeButton = $('<button>Complete</button>');
+  deleteButton = $('<button>Delete</button>');
 };
+
 //Individual TodoItem
 //Handles:
   //Constructing DOM elements for displaying itself
